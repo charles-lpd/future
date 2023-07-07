@@ -1,4 +1,4 @@
-
+import { UserInfo } from './type'
 export const baseUrl = 'http://localhost:8000/info'
 
 import axios, { AxiosRequestConfig, AxiosResponse } from 'axios'
@@ -35,8 +35,16 @@ export const sendRequest = async (
   })
 }
 
-export const getUserInfo = async ():Promise<any> => {
+export const getUserInfo = async ():Promise<UserInfo[]> => {
   const url = 'http://localhost:8000/info'
+  const result = await sendRequest({
+    url,
+    method: 'get'
+  })
+  return result.data
+}
+export const getUser = async (user:string):Promise<any> => {
+  const url = 'http://localhost:8000/user?id=liu'
   const result = await sendRequest({
     url,
     method: 'get'
