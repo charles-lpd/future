@@ -12,7 +12,6 @@
     "arseeding-js-esm": "^0.1.1",
     "axios": "^1.2.2",
     "buffer": "^6.0.3",
-    "crypto": "^1.0.1",
     "crypto-browserify": "^3.12.0",
     "everpay": "^0.6.1",
     "node-polyfill-webpack-plugin": "^2.0.1",
