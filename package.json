@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "arseeding-js": "^0.0.28",
-    "arseeding-js-esm": "^0.1.1",
+    "arseeding-js-esm": "^0.1.2",
     "axios": "^1.2.2",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",

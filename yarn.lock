@@ -1003,10 +1003,10 @@ arg@^5.0.2:
   resolved "https://registry.yarnpkg.com/arg/-/arg-5.0.2.tgz#c81433cc427c92c4dcf4865142dbca6f15acd59c"
   integrity sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg==
 
-arseeding-arbundles-esm@0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/arseeding-arbundles-esm/-/arseeding-arbundles-esm-0.0.3.tgz#ca7406fcdd76f341739366e552bccdb2675b3a11"
-  integrity sha512-IzqcP14YpqIDAXi5lq6k7E6aBZbZCazA6uIj/8FkdTK6eWVIUakyqOzH/cQv3sVPdQGQxy/tG9CJlT1YpXNZkQ==
+arseeding-arbundles-esm@0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/arseeding-arbundles-esm/-/arseeding-arbundles-esm-0.0.4.tgz#743cd8e5e35d2d1ad934e12db7bd31a49ab10323"
+  integrity sha512-RhLz8uYkwuCkvHdy6r9fbVSTJkjC2tFG/3HV5AFTeGFqBHA8FQF8680z85nmSlGGUF5B/f2B6eWlpY6z05VlEg==
   dependencies:
     "@noble/ed25519" "^1.6.1"
     "@randlabs/myalgo-connect" "^1.1.2"
@@ -1018,6 +1018,7 @@ arseeding-arbundles-esm@0.0.3:
     axios "^0.21.3"
     base64url "^3.0.1"
     bs58 "^4.0.1"
+    crypto-browserify "^3.12.0"
     ethers "^5.5.1"
     keccak "^3.0.2"
     multistream "^4.1.0"
@@ -1051,15 +1052,16 @@ arseeding-arbundles@0.6.25:
     ts-node "^10.5.0"
     tslib "^2.3.0"
 
-arseeding-js-esm@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/arseeding-js-esm/-/arseeding-js-esm-0.1.1.tgz#af50fcc9d8e2d5aaff6b5e3eb7672a2708eb00e4"
-  integrity sha512-/Fs8hbotjPyVnnjHdX3RDERW13uRoG2BD2gffhfzhxTMwU4uH9vM0aVUotJpdKlDpJtAF+ZmXWPpgwJynQUsgw==
+arseeding-js-esm@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/arseeding-js-esm/-/arseeding-js-esm-0.1.2.tgz#d4515010e17c81112e143b95e6c6259e2fb64c35"
+  integrity sha512-xBy0PsgqS3rqu0ikNjnaGYyfM668ZtTXYSrI8c8bkETkc1b9JbjwY+LnBdl/Uw2cKHdlzxjzL4TCUNjZfMTgMw==
   dependencies:
     "@supercharge/promise-pool" "^2.3.2"
-    arseeding-arbundles-esm "0.0.3"
+    arseeding-arbundles-esm "0.0.4"
     axios "^0.21.1"
     bignumber.js "^9.0.2"
+    crypto-browserify "^3.12.0"
     crypto-js "^4.1.1"
     ethers "^5.7.1"
     everpay "0.6.3"
@@ -1149,6 +1151,11 @@ available-typed-arrays@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
+
+"avsc@git+https://github.com/Bundlr-Network/avsc.git#csp-fixes":
+  version "5.4.7"
+  uid a730cc8018b79e114b6a3381bbb57760a24c6cef
+  resolved "git+https://github.com/Bundlr-Network/avsc.git#a730cc8018b79e114b6a3381bbb57760a24c6cef"
 
 "avsc@https://github.com/Bundlr-Network/avsc#csp-fixes":
   version "5.4.7"
@@ -1511,11 +1518,6 @@ crypto-js@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.1.1.tgz#9e485bcf03521041bd85844786b83fb7619736cf"
   integrity sha512-o2JlM7ydqd3Qk9CA0L4NL6mTzU2sdx96a+oOfPu8Mkl/PK51vSyoi8/rQ8NknZtk44vq15lmhAj9CIAGwgeWKw==
-
-crypto@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/crypto/-/crypto-1.0.1.tgz#2af1b7cad8175d24c8a1b0778255794a21803037"
-  integrity sha512-VxBKmeNcqQdiUQUW2Tzq0t377b54N2bMtXO/qiLa+6eRRmmC4qT3D4OnTGoT/U6O9aklQ/jTwbOtRMTTY8G0Ig==
 
 cssesc@^3.0.0:
   version "3.0.0"
