@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/node": "^20.4.1",
     "arseeding-js": "^0.0.28",
     "arseeding-js-esm": "^0.1.1",
     "axios": "^1.2.2",
