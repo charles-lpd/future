@@ -7,7 +7,7 @@ import {NodeGlobalsPolyfillPlugin} from '@esbuild-plugins/node-globals-polyfill'
 import {NodeModulesPolyfillPlugin} from '@esbuild-plugins/node-modules-polyfill'
 // You don't need to add this to deps, it's included by @esbuild-plugins/node-modules-polyfill
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
-
+import nodeResolve from '@rollup/plugin-node-resolve'
 // https://vitejs.dev/config/
 export default defineConfig(({mode}) => {
     const env = loadEnv(mode, process.cwd())
@@ -61,7 +61,8 @@ export default defineConfig(({mode}) => {
                 plugins: [
                     // Enable rollup polyfills plugin
                     // used during production bundling
-                    rollupNodePolyFill()
+                    rollupNodePolyFill(),
+                    nodeResolve()
                 ]
             }
         }
